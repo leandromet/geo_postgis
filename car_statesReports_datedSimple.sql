@@ -98,9 +98,47 @@ ORDER BY cod_estado, tipo,
 
 
 
+---- PRA por estado, 7 primeiras respostas
+
+SELECT 
+  municipio.cod_estado, 
+  CASE	WHEN num_modulo_fiscal <= 4 THEN '0a4MF'
+			WHEN num_modulo_fiscal > 4  AND num_modulo_fiscal <= 15 THEN '4a15 MF'
+			WHEN num_modulo_fiscal > 15 THEN 'sup15MF'
+		END AS mf,
+  resposta_imovel.idt_resposta_pergunta, 
+  resposta_imovel.des_resposta, 
+  pergunta.des_pergunta, 
+  count(imovel.idt_imovel) AS contagem
+  
+FROM 
+  usr_geocar_aplicacao.imovel, 
+  usr_geocar_aplicacao.resposta_imovel, 
+  usr_geocar_aplicacao.pergunta, 
+  usr_geocar_aplicacao.resposta_pergunta, 
+  usr_geocar_aplicacao.municipio
+WHERE 
+  resposta_imovel.idt_resposta_pergunta IN (1,2,3,4,5,6,7) AND
+  resposta_imovel.idt_imovel = imovel.idt_imovel AND
+  resposta_pergunta.idt_pergunta = pergunta.idt_pergunta AND
+  resposta_pergunta.idt_resposta_pergunta = resposta_imovel.idt_resposta_pergunta AND
+  municipio.idt_municipio = imovel.idt_municipio AND cod_estado='AC'
+Group By municipio.cod_estado,resposta_imovel.idt_resposta_pergunta, mf, resposta_imovel.des_resposta, 
+  pergunta.des_pergunta
+order by municipio.cod_estado,resposta_imovel.idt_resposta_pergunta, mf;
+
+SELECT	 AS "totalQtdCar",
+	m.cod_estado
+FROM	usr_geocar_aplicacao.imovel i, 
+	usr_geocar_aplicacao.municipio m,
+	usr_geocar_aplicacao.resposta_imovel ri
+WHERE 	m.idt_municipio = i.idt_municipio
+	AND i.idt_imovel = ri.idt_imovel
+	AND ri.idt_resposta_pergunta = 1
 
 
-
+GROUP BY m.cod_estado
+ORDER BY m.cod_estado;
 
 ﻿--6.1) Área total de APP cadastrada (BR, Região e UFs)
 
@@ -121,8 +159,6 @@ WHERE 	(flg_ativo = TRUE
 	OR (ind_status_imovel = 'RE' AND idt_tema = 30 AND dat_criacao < to_date('01/02/2016','dd/mm/yyyy') AND dat_atualizacao>= to_date('01/02/2016','dd/mm/yyyy'))
 GROUP BY cod_estado, tipo
 ORDER BY cod_estado, tipo;
-
-
 
 
 --Remanescente em APP total
