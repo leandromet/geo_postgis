@@ -227,7 +227,7 @@ END$$;
 
 #!/bin/sh
 dbname="car_nacional082016"
-username="admincar"
+username="adm"
 line=30999
 
 for i in {0..80}
