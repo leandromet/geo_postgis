@@ -1,0 +1,6 @@
+#!/bin/sh
+
+ogr2ogr -f "ESRI Shapefile"  poligonos_pct.shp PG:"host=host.144 user=user dbname=db"  -sql "SELECT    imovel.idt_imovel, imovel.nom_imovel,    imovel.num_area_imovel as area_ha,    imovel.num_modulo_fiscal as num_mf,    municipio.nom_municipio, municipio.cod_estado,geo_area_imovel as geom    FROM    usr_geocar_aplicacao.imovel,    usr_geocar_aplicacao.municipio WHERE    imovel.ind_tipo_imovel = 'PCT' AND  imovel.ind_status_imovel in ('PE','AT') and municipio.idt_municipio = imovel.idt_municipio   order by municipio.cod_estado,nom_municipio, nom_imovel" 
+
+
+ogr2ogr -f "CSV"  lista_pct_pessoas.csv PG:"host=host.144 user=user dbname=db"  -sql "SELECT    imovel.idt_imovel, imovel.nom_imovel,    round(avg(imovel.num_area_imovel),4) as area_ha,    round(avg(imovel.num_modulo_fiscal),4) as num_mf,    count(imovel_pessoa.idt_imovel_pessoa) as pessoas,    municipio.nom_municipio, municipio.cod_estado    FROM    usr_geocar_aplicacao.imovel,    usr_geocar_aplicacao.imovel_pessoa,    usr_geocar_aplicacao.municipio WHERE    imovel.ind_tipo_imovel = 'PCT' AND  imovel.ind_status_imovel in ('PE','AT') and  imovel_pessoa.idt_imovel = imovel.idt_imovel AND   municipio.idt_municipio = imovel.idt_municipio   group by municipio.cod_estado,nom_municipio, imovel.idt_imovel,imovel.nom_imovel   order by municipio.cod_estado,nom_municipio, nom_imovel" 
