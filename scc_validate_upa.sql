@@ -1,4 +1,5 @@
 --Function to validate an Anual Production Unit inside an Area conceaded to forest management
+-- This sequence validates a polygon inside another and updates a table depending on the result
 
 --FUNCAO PARA VALIDACAO E INCLUSAO DE UPA NA UMF, RETORNA TRUE SE VALIDADO (COPIA REGISTROS PARA TABELA scc.scc_upa)
  -- E FALSE SE NÃO VALIDADO. DEVOLVE O PORCENTUAL DE ÁREA FORA DA UMF E QUANTAS UPA EXISTENTES ELE SE SOBREPÕE SE FOR O CASO
