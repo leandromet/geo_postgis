@@ -5,8 +5,9 @@ SELECT
   municipio.cod_estado, 
   imovel.ind_status_imovel, 
   imovel.des_condicao, 
-  restricao.nm_restricao, 
-  historico_imovel_restricao.des_descricao
+  restricao.nm_restricao
+  --, 
+  --historico_imovel_restricao.des_descricao
 FROM 
   usr_geocar_aplicacao.historico_imovel_restricao, 
   usr_geocar_aplicacao.restricao, 
@@ -24,5 +25,6 @@ group by
   municipio.cod_estado, 
   imovel.ind_status_imovel, 
   imovel.des_condicao, 
-  restricao.nm_restricao, 
-  historico_imovel_restricao.des_descricao
+  restricao.nm_restricao
+  --, 
+--  historico_imovel_restricao.des_descricao
