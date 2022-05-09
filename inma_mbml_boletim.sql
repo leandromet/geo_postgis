@@ -19,8 +19,29 @@ st_intersects(slma2.geom, ibge_mu.geom)
 )B 
 on A.id_slma=B.id_slma2
 
+--Function for resolving invalid timestamp and errors on conversion
+
+--create or replace function my_to_timestamp(arg text)
+--returns timestamp language plpgsql
+--as $$
+--begin
+--    begin
+--        return arg::timestamp;
+--    exception when others then
+--        return null;
+--    end;
+--end $$;
 
 
+create table inma_processamento.splma_date as
+
+select species_link_mata_atlantica.id,geom,genus,kingdom,
+scientificname,phylum,"family",species,subspecies,
+my_to_timestamp(to_char(make_date(nullif(yearcollected::int,0),nullif(monthcollected::int,0),nullif(daycollected::int,0)),'DD Mon YYYY')) as date
+from
+inma_processamento.species_link_mata_atlantica
+
+--limit 100
 
 
 
