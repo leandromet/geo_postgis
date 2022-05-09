@@ -32,16 +32,26 @@ on A.id_slma=B.id_slma2
 --    end;
 --end $$;
 
+--- only resolved month and year since some months had charcters on it and there are days with invalid timestamp like november 31st
 
 create table inma_processamento.splma_date as
 
 select species_link_mata_atlantica.id,geom,genus,kingdom,
 scientificname,phylum,"family",species,subspecies,
-my_to_timestamp(to_char(make_date(nullif(yearcollected::int,0),nullif(monthcollected::int,0),nullif(daycollected::int,0)),'DD Mon YYYY')) as date
+my_to_timestamp(to_char(make_date(nullif(yearcollected::int,0),
+								  nullif(
+									  CASE WHEN monthcollected~E'^\\d+$' 
+									  THEN 
+									    CASE WHEN monthcollected::integer>12 
+									    THEN  12 
+									    ELSE monthcollected::integer END
+									  ELSE 0 END,0), 1), 'Mon YYYY')) as date
 from
 inma_processamento.species_link_mata_atlantica
 
 --limit 100
+
+
 
 
 
