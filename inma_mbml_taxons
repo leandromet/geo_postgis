@@ -1,0 +1,36 @@
+select  count(distinct("species")),phylum, kingdom 
+
+from inma_processamento.es_colec_splink 
+
+group by kingdom, phylum
+order by count desc
+
+
+select  count(distinct("family")),phylum, kingdom 
+
+from inma_processamento.es_colec_splink 
+
+group by kingdom, phylum
+order by count desc
+
+
+
+select  count(distinct("phylum")), kingdom 
+
+from inma_processamento.es_colec_splink 
+
+group by kingdom
+
+
+select  count(distinct("family")), kingdom 
+
+from inma_processamento.es_colec_splink 
+
+group by kingdom
+
+
+
+
+
+
+
