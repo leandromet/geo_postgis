@@ -30,7 +30,16 @@ group by kingdom
 
 
 
+select count(*) 
 
+from inma_processamento.gbif_original
+
+--6.213.025
+
+--where char_length(phylum)<30 and char_length(kingdom)<20
+--5725905
+---where char_length(phylum)<20 and char_length(kingdom)<20
+--5.707.657
 
 
 
