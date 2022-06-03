@@ -33,6 +33,21 @@ and
 st_INTERSECTS(ibge_br_mu_250gc_2018.geom, es_colec_gbif.geom)
 
 
+create table inma_processamento.boletim_sibbr_insecta_ricardo20220531_serra as  
+
+select ibge_br_mu_250gc_2018.nm_municip ,es_colec_sibbr.* from inma_processamento.es_colec_sibbr , dados_externos.ibge_br_mu_250gc_2018
+where class in ('Arthropoda','Insecta' )
+and nm_municip in ( 'SANTA TERESA',
+'SANTA MARIA DE JETIBÁ',
+'SANTA LEOPOLDINA',
+'ITAGUAÇU',
+'ITARANA')
+and
+st_INTERSECTS(ibge_br_mu_250gc_2018.geom, es_colec_sibbr.geom)
+
+
+
+
 
 
 select distinct nm_municip, ("order"), "class", count(*) from inma_processamento.es_colec_gbif , dados_externos.ibge_br_mu_250gc_2018
