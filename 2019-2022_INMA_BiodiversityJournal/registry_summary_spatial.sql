@@ -88,7 +88,7 @@ group by nm_municip, selc1.kingdom, selc1."class", selc1."order",selc1.family
 
 gbif
 
-select nm_municip, selc1."class",selc1."order", selc1.family, sum(gbif) as gbif, sum(imv) as imv, sum(app) as app,  sum(rvn) as rvn, sum(rl) as rl from
+select nm_municip,selc1.kingdom, selc1."class",selc1."order", selc1.family, sum(gbif) as gbif, sum(imv) as imv, sum(app) as app,  sum(rvn) as rvn, sum(rl) as rl from
 
 
 dados_externos.ibge_br_mu_250gc_2018,
