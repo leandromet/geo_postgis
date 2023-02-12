@@ -38,3 +38,4 @@ gcveg0210, gcveg1016, es_9402, e_9402, r_9402, el_9402, es_0210, e_0210, r_0210,
 el_0210, es_1016, e_1016, r_1016, el_1016, layer, path
 from inpe.carbono_inventario4 
 ;
+ALTER TABLE inpe.carbono_inventario4_full ADD COLUMN id SERIAL PRIMARY KEY;
