@@ -1,0 +1,426 @@
+"uf","legenda","descricao","count","sum"
+"AC","A","Água",8789,48306.75040000007
+"AL","A","Água",285,32007.39220000001
+"AM","A","Água",133105,5371741.709700236
+"AP","A","Água",10202,661647.6884999933
+"BA","A","Água",5096,154057.64930000016
+"CE","A","Água",2458,27864.630899999996
+"DF","A","Água",46,394.5182
+"ES","A","Água",427,40392.39890000004
+"GO","A","Água",10777,76717.8190999996
+"MA","A","Água",26660,1368290.8377999994
+"MG","A","Água",7043,112904.00650000018
+"MS","A","Água",24632,417260.4280999999
+"MT","A","Água",21964,648685.3801999991
+"PA","A","Água",70424,4676617.129599976
+"PB","A","Água",142,6249.935099999999
+"PE","A","Água",919,33204.44939999999
+"PI","A","Água",3949,47722.869900000056
+"PR","A","Água",2440,109934.53929999996
+"RJ","A","Água",1114,93777.09060000001
+"RN","A","Água",977,20352.983100000005
+"RO","A","Água",5700,135496.02029999997
+"RR","A","Água",22221,434001.9197999913
+"RS","A","Água",12779,1647568.9935000017
+"SC","A","Água",1912,63441.42670000012
+"SE","A","Água",412,28543.625800000016
+"SP","A","Água",2783,50813.13920000002
+"TO","A","Água",8996,201971.26950000157
+"AC","Ac","Agricultura anual / Geral",102,3745.6650999999997
+"AL","Ac","Agricultura anual / Geral",1585,82964.25319999999
+"AM","Ac","Agricultura anual / Geral",408,1012.3839999999996
+"AP","Ac","Agricultura anual / Geral",1099,19816.3886
+"BA","Ac","Agricultura anual / Geral",58918,3490780.239599995
+"CE","Ac","Agricultura anual / Geral",32945,1002157.664199997
+"DF","Ac","Agricultura anual / Geral",2869,125865.33399999994
+"ES","Ac","Agricultura anual / Geral",269,20173.9174
+"GO","Ac","Agricultura anual / Geral",167813,4482398.697499998
+"MA","Ac","Agricultura anual / Geral",32950,1024041.5337000036
+"MG","Ac","Agricultura anual / Geral",103580,2810979.696400019
+"MS","Ac","Agricultura anual / Geral",65722,3066453.417700001
+"MT","Ac","Agricultura anual / Geral",296794,10476371.674899928
+"PA","Ac","Agricultura anual / Geral",48393,557136.8423000011
+"PB","Ac","Agricultura anual / Geral",2100,139827.6829
+"PE","Ac","Agricultura anual / Geral",7240,387839.9609000001
+"PI","Ac","Agricultura anual / Geral",33865,1424177.4718999998
+"PR","Ac","Agricultura anual / Geral",88224,6360724.180800005
+"RJ","Ac","Agricultura anual / Geral",218,14174.514599999997
+"RN","Ac","Agricultura anual / Geral",13341,530097.9469999998
+"RO","Ac","Agricultura anual / Geral",31660,324170.14030000113
+"RR","Ac","Agricultura anual / Geral",1973,65927.02689999994
+"RS","Ac","Agricultura anual / Geral",136275,7868112.532199983
+"SC","Ac","Agricultura anual / Geral",43854,1352579.188700018
+"SE","Ac","Agricultura anual / Geral",4682,300275.4000999993
+"SP","Ac","Agricultura anual / Geral",51733,1781455.5826000087
+"TO","Ac","Agricultura anual / Geral",35919,1117353.4487999983
+"AC","Ap","Pastagem",210421,1923671.1559000053
+"AL","Ap","Pastagem",17687,1416384.8817999982
+"AM","Ap","Pastagem",307370,2377154.4254000233
+"AP","Ap","Pastagem",31836,172301.23430000007
+"BA","Ap","Pastagem",348451,15628175.298899956
+"CE","Ap","Pastagem",93909,2373487.2602000027
+"DF","Ap","Pastagem",2302,117454.39860000009
+"ES","Ap","Pastagem",14095,2481007.446600003
+"GO","Ap","Pastagem",195377,15022115.961199949
+"MA","Ap","Pastagem",367614,9511997.717800051
+"MG","Ap","Pastagem",239657,25240663.881000195
+"MS","Ap","Pastagem",97491,15803202.638799869
+"MT","Ap","Pastagem",607798,21990208.708200045
+"PA","Ap","Pastagem",1112432,20302154.29369992
+"PB","Ap","Pastagem",54957,2038098.039100002
+"PE","Ap","Pastagem",81095,3688845.6982999947
+"PI","Ap","Pastagem",136454,2404956.9397000065
+"PR","Ap","Pastagem",80268,4774636.0983000165
+"RJ","Ap","Pastagem",8825,2381820.034699997
+"RN","Ap","Pastagem",31971,873962.8734000027
+"RO","Ap","Pastagem",434560,8045055.415400055
+"RR","Ap","Pastagem",72043,999351.207900007
+"RS","Ap","Pastagem",100865,5313379.288000021
+"SC","Ap","Pastagem",51528,1855210.2177000155
+"SE","Ap","Pastagem",12924,1191876.8277000003
+"SP","Ap","Pastagem",81026,7301560.105199985
+"TO","Ap","Pastagem",174829,7700284.6058999505
+"AC","CS","Corte Seletivo",64,6511.192499999999
+"AM","CS","Corte Seletivo",273,78870.11639999997
+"MA","CS","Corte Seletivo",18,3262.2771000000002
+"MT","CS","Corte Seletivo",1417,367969.5585999997
+"PA","CS","Corte Seletivo",1813,320570.3922999998
+"RO","CS","Corte Seletivo",326,40081.12240000001
+"RR","CS","Corte Seletivo",92,12969.6499
+"TO","CS","Corte Seletivo",2,1671.4808
+"AC","FM","Floresta Manejada",6802,6914292.021399988
+"AL","FM","Floresta Manejada",727,69820.6851
+"AM","FM","Floresta Manejada",121343,84028633.32510032
+"AP","FM","Floresta Manejada",103341,9906446.57540001
+"BA","FM","Floresta Manejada",8019,3728285.0531999986
+"CE","FM","Floresta Manejada",2637,600757.355
+"DF","FM","Floresta Manejada",1041,111361.29960000006
+"ES","FM","Floresta Manejada",644,106249.87609999996
+"GO","FM","Floresta Manejada",2353,823644.7834999996
+"MA","FM","Floresta Manejada",37396,3736416.3709999947
+"MG","FM","Floresta Manejada",7373,1627795.2365000034
+"MS","FM","Floresta Manejada",3031,884934.4879000015
+"MT","FM","Floresta Manejada",6047,14469689.404800002
+"PA","FM","Floresta Manejada",177903,64556853.32919999
+"PB","FM","Floresta Manejada",176,19722.1727
+"PE","FM","Floresta Manejada",2352,410847.6196999998
+"PI","FM","Floresta Manejada",3746,2276554.557899997
+"PR","FM","Floresta Manejada",3498,956324.5875999993
+"RJ","FM","Floresta Manejada",3763,473301.33990000025
+"RN","FM","Floresta Manejada",340,25963.158799999997
+"RO","FM","Floresta Manejada",3217,8691333.292799985
+"RR","FM","Floresta Manejada",57831,12484661.830200033
+"RS","FM","Floresta Manejada",2384,401282.4821000001
+"SC","FM","Floresta Manejada",740,306566.1449999999
+"SE","FM","Floresta Manejada",86,9812.7382
+"SP","FM","Floresta Manejada",12045,1845277.7672000062
+"TO","FM","Floresta Manejada",4039,2096462.7907000005
+"AC","FNM","Floresta Não Manejada",20276,7223827.378799998
+"AL","FNM","Floresta Não Manejada",8446,455706.35189999995
+"AM","FNM","Floresta Não Manejada",116962,60324300.047299884
+"AP","FNM","Floresta Não Manejada",43437,2807662.642299997
+"BA","FNM","Floresta Não Manejada",118335,22368703.30579988
+"CE","FNM","Floresta Não Manejada",42385,7710724.350900016
+"DF","FNM","Floresta Não Manejada",252,1266.0103999999997
+"ES","FNM","Floresta Não Manejada",20542,1162305.0283000008
+"GO","FNM","Floresta Não Manejada",71909,7583770.764499993
+"MA","FNM","Floresta Não Manejada",63646,11453065.757400014
+"MG","FNM","Floresta Não Manejada",168324,15347519.07310006
+"MS","FNM","Floresta Não Manejada",42382,7135580.025699997
+"MT","FNM","Floresta Não Manejada",96177,30952736.032799907
+"PA","FNM","Floresta Não Manejada",258822,27197855.0653999
+"PB","FNM","Floresta Não Manejada",16877,2348500.722200005
+"PE","FNM","Floresta Não Manejada",22749,3335254.1489999997
+"PI","FNM","Floresta Não Manejada",19350,15268174.04450003
+"PR","FNM","Floresta Não Manejada",85616,4543139.133500041
+"RJ","FNM","Floresta Não Manejada",17871,914095.8678000006
+"RN","FNM","Floresta Não Manejada",16343,2278907.9217000026
+"RO","FNM","Floresta Não Manejada",52188,5287189.870100003
+"RR","FNM","Floresta Não Manejada",31328,5145736.3496999955
+"RS","FNM","Floresta Não Manejada",90913,5357040.946000004
+"SC","FNM","Floresta Não Manejada",34258,3608519.487900001
+"SE","FNM","Floresta Não Manejada",6772,387598.13929999963
+"SP","FNM","Floresta Não Manejada",67895,2891569.4587000003
+"TO","FNM","Floresta Não Manejada",34259,9551218.160399972
+"AC","FSec","Floresta secundária",136965,280596.35359999945
+"AL","FSec","Floresta secundária",7934,128563.19339999976
+"AM","FSec","Floresta secundária",268918,1107765.4370999904
+"AP","FSec","Floresta secundária",17032,59601.81909999983
+"BA","FSec","Floresta secundária",189394,3027689.123500018
+"CE","FSec","Floresta secundária",84349,1710723.9403000053
+"DF","FSec","Floresta secundária",258,4151.749100000001
+"ES","FSec","Floresta secundária",1230,18494.285099999997
+"GO","FSec","Floresta secundária",34503,655774.7774999989
+"MA","FSec","Floresta secundária",175451,1826243.402499997
+"MG","FSec","Floresta secundária",58162,1621701.8989000046
+"MS","FSec","Floresta secundária",19029,373360.1218999992
+"MT","FSec","Floresta secundária",369256,3360904.7783000115
+"PA","FSec","Floresta secundária",647645,4385927.874600057
+"PB","FSec","Floresta secundária",38803,718438.4943999975
+"PE","FSec","Floresta secundária",45675,1012481.8626999968
+"PI","FSec","Floresta secundária",96231,1506332.6158000126
+"PR","FSec","Floresta secundária",12668,223950.89659999998
+"RJ","FSec","Floresta secundária",2697,23257.31340000003
+"RN","FSec","Floresta secundária",24376,674430.4409999988
+"RO","FSec","Floresta secundária",224120,722931.7536999935
+"RR","FSec","Floresta secundária",36617,170379.5618000001
+"RS","FSec","Floresta secundária",15775,211871.55729999987
+"SC","FSec","Floresta secundária",8200,107914.59459999981
+"SE","FSec","Floresta secundária",6357,96667.82889999993
+"SP","FSec","Floresta secundária",19462,346845.0672999987
+"TO","FSec","Floresta secundária",63299,659153.9329999986
+"AL","GM","Campo Manejado",5,0.0024000000000000002
+"AM","GM","Campo Manejado",1804,255162.89100000012
+"AP","GM","Campo Manejado",155,977.5658000000001
+"BA","GM","Campo Manejado",385,37962.24540000001
+"CE","GM","Campo Manejado",3,9.862400000000001
+"DF","GM","Campo Manejado",41,286.5628
+"GO","GM","Campo Manejado",235,52018.0436
+"MA","GM","Campo Manejado",17,88987.88089999999
+"MG","GM","Campo Manejado",1552,655884.5351999998
+"MS","GM","Campo Manejado",268,48889.5737
+"MT","GM","Campo Manejado",107,98678.36649999999
+"PA","GM","Campo Manejado",120,248097.1287
+"PR","GM","Campo Manejado",1686,86595.62529999999
+"RJ","GM","Campo Manejado",1,0.0001
+"RO","GM","Campo Manejado",20,16119.4375
+"RR","GM","Campo Manejado",3538,1255134.7279000008
+"RS","GM","Campo Manejado",401,74392.89890000001
+"SC","GM","Campo Manejado",187,26651.625299999996
+"SP","GM","Campo Manejado",382,12102.2076
+"TO","GM","Campo Manejado",417,217277.77419999999
+"AC","GNM","Campo Não Manejado",4,3209.5985
+"AM","GNM","Campo Não Manejado",2883,565057.6033999997
+"AP","GNM","Campo Não Manejado",1684,75332.44220000008
+"BA","GNM","Campo Não Manejado",3586,293419.5796000002
+"CE","GNM","Campo Não Manejado",678,12019.627099999983
+"DF","GNM","Campo Não Manejado",3,2.2838000000000003
+"GO","GNM","Campo Não Manejado",6569,130382.31099999973
+"MA","GNM","Campo Não Manejado",281,137009.47149999999
+"MG","GNM","Campo Não Manejado",21820,3057562.0880999984
+"MS","GNM","Campo Não Manejado",6099,2097746.1816
+"MT","GNM","Campo Não Manejado",2805,657959.8438000007
+"PA","GNM","Campo Não Manejado",1412,246150.62990000012
+"PI","GNM","Campo Não Manejado",171,188910.83219999998
+"PR","GNM","Campo Não Manejado",6844,115557.68559999994
+"RO","GNM","Campo Não Manejado",32,7871.759999999999
+"RR","GNM","Campo Não Manejado",1409,457379.1860000001
+"RS","GNM","Campo Não Manejado",27561,2616438.308300008
+"SC","GNM","Campo Não Manejado",5226,712551.2048000012
+"SE","GNM","Campo Não Manejado",6,8.1759
+"SP","GNM","Campo Não Manejado",956,32963.30189999999
+"TO","GNM","Campo Não Manejado",1335,314555.87569999986
+"AC","Min","Mineração",9,62.5703
+"AL","Min","Mineração",24,313.29179999999997
+"AM","Min","Mineração",1030,8925.7629
+"AP","Min","Mineração",501,4624.0657
+"BA","Min","Mineração",524,13236.977200000001
+"CE","Min","Mineração",340,6418.945899999999
+"DF","Min","Mineração",64,797.0022999999999
+"ES","Min","Mineração",189,3416.1966
+"GO","Min","Mineração",487,11423.161800000002
+"MA","Min","Mineração",540,5885.8765
+"MG","Min","Mineração",2361,57764.196399999986
+"MS","Min","Mineração",174,2677.1647000000003
+"MT","Min","Mineração",5650,47530.40669999999
+"PA","Min","Mineração",11119,101953.50769999993
+"PB","Min","Mineração",57,843.5775
+"PE","Min","Mineração",162,2874.4009
+"PI","Min","Mineração",101,1132.2353000000003
+"PR","Min","Mineração",567,8399.051800000001
+"RJ","Min","Mineração",214,4865.3255
+"RN","Min","Mineração",1354,57218.55049999999
+"RO","Min","Mineração",1199,18776.2379
+"RR","Min","Mineração",25,217.0097
+"RS","Min","Mineração",376,5683.0307999999995
+"SC","Min","Mineração",268,4131.321499999999
+"SE","Min","Mineração",72,4466.472000000001
+"SP","Min","Mineração",1123,19087.869300000006
+"TO","Min","Mineração",147,1692.0903999999996
+"AC","NO","Não observado",10,178.20069999999998
+"AM","NO","Não observado",469,9139.918300000001
+"AP","NO","Não observado",477,7540.577399999999
+"BA","NO","Não observado",1478,36077.995899999994
+"CE","NO","Não observado",824,10453.169499999996
+"MA","NO","Não observado",406,4762.598099999999
+"PA","NO","Não observado",2960,50439.78179999998
+"PB","NO","Não observado",52,540.2548999999999
+"PE","NO","Não observado",42,1407.9601
+"RN","NO","Não observado",629,8860.393100000003
+"RR","NO","Não observado",193,11795.046799999998
+"AM","OFLM","Outras formações lenhosas manejadas",3678,846658.3650000002
+"AP","OFLM","Outras formações lenhosas manejadas",1206,67114.98700000002
+"BA","OFLM","Outras formações lenhosas manejadas",1851,572063.3665999997
+"CE","OFLM","Outras formações lenhosas manejadas",229,46602.590699999986
+"DF","OFLM","Outras formações lenhosas manejadas",958,108600.10840000004
+"ES","OFLM","Outras formações lenhosas manejadas",1,4048.4637
+"GO","OFLM","Outras formações lenhosas manejadas",1170,611114.8297999997
+"MA","OFLM","Outras formações lenhosas manejadas",2758,675200.6315
+"MG","OFLM","Outras formações lenhosas manejadas",614,197309.6506
+"MS","OFLM","Outras formações lenhosas manejadas",923,80070.90350000004
+"MT","OFLM","Outras formações lenhosas manejadas",1828,2152208.8674
+"PA","OFLM","Outras formações lenhosas manejadas",5023,1417504.3795999966
+"PE","OFLM","Outras formações lenhosas manejadas",134,8753.891499999998
+"PI","OFLM","Outras formações lenhosas manejadas",1683,149045.2778999998
+"PR","OFLM","Outras formações lenhosas manejadas",26,2393.6067
+"RJ","OFLM","Outras formações lenhosas manejadas",7,6962.629
+"RN","OFLM","Outras formações lenhosas manejadas",1,1.114
+"RO","OFLM","Outras formações lenhosas manejadas",176,248769.22650000002
+"RR","OFLM","Outras formações lenhosas manejadas",4143,1040623.2295999998
+"RS","OFLM","Outras formações lenhosas manejadas",13,1229.1535
+"SC","OFLM","Outras formações lenhosas manejadas",13,7.2471
+"SE","OFLM","Outras formações lenhosas manejadas",19,2741.4909000000002
+"SP","OFLM","Outras formações lenhosas manejadas",83,19756.826200000003
+"TO","OFLM","Outras formações lenhosas manejadas",1467,2392449.8698000005
+"AM","OFLNM","Outras formações lenhosas não manejadas",4107,1008733.9106000003
+"AP","OFLNM","Outras formações lenhosas não manejadas",12311,526005.7037999999
+"BA","OFLNM","Outras formações lenhosas não manejadas",5586,1835891.1940999995
+"CE","OFLNM","Outras formações lenhosas não manejadas",3940,472512.8031999997
+"DF","OFLNM","Outras formações lenhosas não manejadas",453,1754.0781000000002
+"GO","OFLNM","Outras formações lenhosas não manejadas",22492,2306814.1448
+"MA","OFLNM","Outras formações lenhosas não manejadas",7079,2906218.9414000055
+"MG","OFLNM","Outras formações lenhosas não manejadas",9521,1065725.2634000024
+"MS","OFLNM","Outras formações lenhosas não manejadas",22688,3228198.4665999995
+"MT","OFLNM","Outras formações lenhosas não manejadas",23715,4181586.5103999963
+"PA","OFLNM","Outras formações lenhosas não manejadas",3809,538557.35
+"PB","OFLNM","Outras formações lenhosas não manejadas",821,96383.99120000005
+"PE","OFLNM","Outras formações lenhosas não manejadas",1152,242059.3837000003
+"PI","OFLNM","Outras formações lenhosas não manejadas",2622,1319659.1311000008
+"PR","OFLNM","Outras formações lenhosas não manejadas",72,1495.1938
+"RJ","OFLNM","Outras formações lenhosas não manejadas",2,29.929100000000002
+"RN","OFLNM","Outras formações lenhosas não manejadas",2840,412647.9975
+"RO","OFLNM","Outras formações lenhosas não manejadas",330,120368.81640000007
+"RR","OFLNM","Outras formações lenhosas não manejadas",3769,752446.377199999
+"RS","OFLNM","Outras formações lenhosas não manejadas",64,9806.546100000001
+"SC","OFLNM","Outras formações lenhosas não manejadas",22,3000.2407000000003
+"SE","OFLNM","Outras formações lenhosas não manejadas",71,390.0957
+"SP","OFLNM","Outras formações lenhosas não manejadas",800,40558.64260000001
+"TO","OFLNM","Outras formações lenhosas não manejadas",6204,3026176.940900003
+"AL","OFLSec","Outras formações lenhosas secundárias",1,0.5202
+"AM","OFLSec","Outras formações lenhosas secundárias",3977,27833.01110000001
+"AP","OFLSec","Outras formações lenhosas secundárias",2332,37369.32349999996
+"BA","OFLSec","Outras formações lenhosas secundárias",8310,174307.2291
+"CE","OFLSec","Outras formações lenhosas secundárias",5625,92113.35460000005
+"DF","OFLSec","Outras formações lenhosas secundárias",449,5648.9498
+"GO","OFLSec","Outras formações lenhosas secundárias",9140,142130.51030000008
+"MA","OFLSec","Outras formações lenhosas secundárias",6978,114591.09689999992
+"MG","OFLSec","Outras formações lenhosas secundárias",3374,88300.3103
+"MS","OFLSec","Outras formações lenhosas secundárias",4143,87398.38630000001
+"MT","OFLSec","Outras formações lenhosas secundárias",12780,229767.60749999998
+"PA","OFLSec","Outras formações lenhosas secundárias",9466,74929.71109999999
+"PB","OFLSec","Outras formações lenhosas secundárias",1247,24408.97849999998
+"PE","OFLSec","Outras formações lenhosas secundárias",2515,39756.88269999994
+"PI","OFLSec","Outras formações lenhosas secundárias",12018,167281.70170000038
+"PR","OFLSec","Outras formações lenhosas secundárias",52,732.2548
+"RJ","OFLSec","Outras formações lenhosas secundárias",1,11.2448
+"RN","OFLSec","Outras formações lenhosas secundárias",4919,79220.27650000005
+"RO","OFLSec","Outras formações lenhosas secundárias",581,5096.1151
+"RR","OFLSec","Outras formações lenhosas secundárias",611,5773.885200000005
+"RS","OFLSec","Outras formações lenhosas secundárias",9,306.66679999999997
+"SC","OFLSec","Outras formações lenhosas secundárias",18,177.37820000000002
+"SE","OFLSec","Outras formações lenhosas secundárias",51,305.107
+"SP","OFLSec","Outras formações lenhosas secundárias",525,11720.256400000006
+"TO","OFLSec","Outras formações lenhosas secundárias",2544,89121.97309999996
+"AC","Ref","Reflorestamento",17,117.6428
+"AL","Ref","Reflorestamento",97,6523.8694000000005
+"AM","Ref","Reflorestamento",176,2625.3674999999994
+"AP","Ref","Reflorestamento",5478,160825.41260000013
+"BA","Ref","Reflorestamento",9039,782122.6795000003
+"DF","Ref","Reflorestamento",256,9337.322800000002
+"ES","Ref","Reflorestamento",7066,282174.5904999997
+"GO","Ref","Reflorestamento",7655,221586.48539999995
+"MA","Ref","Reflorestamento",4691,308748.8381999999
+"MG","Ref","Reflorestamento",64019,2575581.6232000086
+"MS","Ref","Reflorestamento",5763,990866.5437999973
+"MT","Ref","Reflorestamento",3857,234175.5413
+"PA","Ref","Reflorestamento",6622,252898.72599999973
+"PB","Ref","Reflorestamento",18,5859.3723
+"PE","Ref","Reflorestamento",27,5312.400799999999
+"PI","Ref","Reflorestamento",527,40589.16139999998
+"PR","Ref","Reflorestamento",48393,1315620.0873999915
+"RJ","Ref","Reflorestamento",745,22250.286699999997
+"RN","Ref","Reflorestamento",1,44.4382
+"RO","Ref","Reflorestamento",124,3667.0202
+"RR","Ref","Reflorestamento",1278,36597.42419999998
+"RS","Ref","Reflorestamento",40240,1181332.7773000023
+"SC","Ref","Reflorestamento",50921,1162081.2671999922
+"SE","Ref","Reflorestamento",63,4520.3315
+"SP","Ref","Reflorestamento",35212,1311955.429400004
+"TO","Ref","Reflorestamento",1807,139066.9703
+"AC","Res","Reservatório",368,2336.453299999999
+"AL","Res","Reservatório",611,9377.4146
+"AM","Res","Reservatório",7384,313605.72170000046
+"AP","Res","Reservatório",428,8086.799000000003
+"BA","Res","Reservatório",5187,337681.1473000001
+"CE","Res","Reservatório",10000,126972.25399999997
+"DF","Res","Reservatório",264,6284.405000000002
+"ES","Res","Reservatório",131,2949.4160999999995
+"GO","Res","Reservatório",6733,328773.90069999994
+"MA","Res","Reservatório",1248,49529.41950000001
+"MG","Res","Reservatório",7281,570727.6051999999
+"MS","Res","Reservatório",1157,246989.94380000012
+"MT","Res","Reservatório",3883,77639.58670000004
+"PA","Res","Reservatório",9405,323188.3535
+"PB","Res","Reservatório",4881,37782.5041
+"PE","Res","Reservatório",2318,71999.84030000004
+"PI","Res","Reservatório",1440,41266.8209
+"PR","Res","Reservatório",768,230738.56630000006
+"RJ","Res","Reservatório",194,15844.742100000003
+"RN","Res","Reservatório",4667,50365.94389999997
+"RO","Res","Reservatório",4442,124565.1156
+"RR","Res","Reservatório",380,8918.175299999999
+"RS","Res","Reservatório",13103,226117.7591999999
+"SC","Res","Reservatório",840,39895.077299999975
+"SE","Res","Reservatório",144,5627.734299999999
+"SP","Res","Reservatório",3225,545805.4151000002
+"TO","Res","Reservatório",2826,149317.66720000008
+"AC","S","Área construída",1223,17645.04430000001
+"AL","S","Área construída",934,33449.74239999998
+"AM","S","Área construída",3358,60822.66990000003
+"AP","S","Área construída",475,14161.652900000005
+"BA","S","Área construída",5732,197800.82440000022
+"CE","S","Área construída",4128,145300.3514999999
+"DF","S","Área construída",1554,82450.60799999992
+"ES","S","Área construída",1315,62730.446399999964
+"GO","S","Área construída",6764,225623.20679999996
+"MA","S","Área construída",8568,150587.95599999998
+"MG","S","Área construída",12726,459788.6907999994
+"MS","S","Área construída",1992,96950.85520000002
+"MT","S","Área construída",4727,138936.65500000003
+"PA","S","Área construída",8752,160947.0316
+"PB","S","Área construída",1277,51088.01320000001
+"PE","S","Área construída",1974,97743.8248
+"PI","S","Área construída",3226,74422.08739999996
+"PR","S","Área construída",5822,290987.3711999997
+"RJ","S","Área construída",4121,253672.3257999994
+"RN","S","Área construída",1973,57358.54180000002
+"RO","S","Área construída",2032,54977.36439999998
+"RR","S","Área construída",468,17283.755399999995
+"RS","S","Área construída",6792,292837.89839999925
+"SC","S","Área construída",4814,204618.27099999972
+"SE","S","Área construída",722,23265.385600000005
+"SP","S","Área construída",19268,906928.4693
+"TO","S","Área construída",2416,60744.50059999994
+"AL","SE","Solo Exposto",5,47.8493
+"AM","SE","Solo Exposto",4,77.5116
+"AP","SE","Solo Exposto",22,183.7025
+"BA","SE","Solo Exposto",314,52196.47339999997
+"CE","SE","Solo Exposto",298,3416.8762000000006
+"ES","SE","Solo Exposto",36,550.3448999999999
+"MA","SE","Solo Exposto",2,6.0464
+"MG","SE","Solo Exposto",59,725.2958
+"MT","SE","Solo Exposto",165,9371.389899999998
+"PA","SE","Solo Exposto",91,702.6694
+"PB","SE","Solo Exposto",24,510.87069999999994
+"PE","SE","Solo Exposto",93,1470.6611
+"PI","SE","Solo Exposto",86,135810.5246
+"PR","SE","Solo Exposto",12,151.1398
+"RJ","SE","Solo Exposto",59,1743.9240999999997
+"RN","SE","Solo Exposto",134,2563.9252
+"RO","SE","Solo Exposto",39,967.5199
+"RR","SE","Solo Exposto",5,44.3296
+"RS","SE","Solo Exposto",159,7285.551800000001
+"SC","SE","Solo Exposto",34,355.1359
+"SE","SE","Solo Exposto",10,86.009
+"SP","SE","Solo Exposto",52,652.1981000000001
+"TO","SE","Solo Exposto",4,14.874
