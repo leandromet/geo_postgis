@@ -8,3 +8,17 @@ from mapbiomas.uso_solo_mapbio7
 group by mb_1, mb_6 , mb_11 ,mb_16 , mb_21 , mb_26 , mb_31 , mb_36
 order by count desc
 
+
+
+
+create table rondonia.mb_mudanca_1985_2020_5yr as
+
+select leg1.description as class_1985, mb_01_1985, mb_06_1990, mb_11_1995, mb_16_2000,
+mb_21_2005, mb_26_2010, mb_31_2015, mb_36_2020, leg2.description as class_2020, count(*) from
+rondonia.mb_rondonia_17_20 , rondonia.mb_rondonia_85_16, mapbiomas.mapbiomas_legend leg1,  mapbiomas.mapbiomas_legend leg2
+where 
+mb_rondonia_17_20.id=mb_rondonia_85_16.id and leg1.mapbiomas=mb_01_1985 and leg2.mapbiomas=mb_36_2020
+group by leg1.description, mb_01_1985, mb_06_1990, mb_11_1995, mb_16_2000,
+mb_21_2005, mb_26_2010, mb_31_2015, mb_36_2020, leg2.description
+
+order by count desc
