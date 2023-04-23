@@ -13,13 +13,41 @@ To create images that represent land use change and a database of pixels for com
 
 Mapbiomas consists of 30 meter resolution raster files for every year between 1985 and 2020, covering the whole Brazilian territory (4,000x4,000 kilometers). It has 25 classes of land use represented by digital numbers in the raster file, like Natural Forest, Pasture, Urban and Silviculture. 
 
-We started by using Raster Calculator to aggregate Natural classes from blocks of years with threshold masks as simple as:
+1			  	Forest
+2			  	Savana
+3			  	Mangrove
+4			  	Silviculture
+5			  	Wetland
+6			  	Coutryside
+7			  	Other non Forest
+8			  	Pasture
+9			  	Cane
+10		 		Agriculture and Pasture
+11				Sand
+12				Urban
+13				Non Vegetated
+14				Rock
+15				Minning
+16				Aquiculture
+17				Peak
+18				Waterstream
+19				Soy
+20				Rice
+21				Other Crops
+22				Coffe
+23				Citrus
+24				Other Perennial Crops
+25				Restinga with Tree
 
-( "extent_year1985@1" = 3 or "extent_year1985@1" = 4 or "extent_year1985@1" = 5 or "extent_year1985@1" = 11 ) 
+We started by using Raster Calculator to aggregate Natural classes ( here considered classes 3, 4, 5 and 11) from blocks of years with threshold masks as simple as:
+
+( "raster_band_1985@1" = 3 or "raster_band_1985@1" = 4 or "raster_band_1985@1" = 5 or "raster_band_1985@1" = 11 ) 
 OR
-( "extent_year1986@1" = 3 or "extent_year1986@1" = 4 or "extent_year1986@1" = 5 or "extent_year1986@1" = 11 ) 
+( "raster_band_1986@1" = 3 or "raster_band_1986@1" = 4 or "raster_band_1986@1" = 5 or "raster_band_1986@1" = 11 ) 
 
-And then multiplying results from distant periods with applied weights to visually enhance areas that lost or recovered certain land use classes. Once we had the mapped regions it is pretty hard to count all locations for many combinations with different years, like looking at same pixels that went from forest to pasture in 1988 but went back to forest in 1995 and then rock in 2005. The flux of uses has too many options for them to be organized by comparing the evolution by year and then by decades to try and see what happened in a larger region.
+Where raster_band_1986 means the raster of the year 1986 with band number 1, in this case each layer has just one band with the pixel valueas from 0 to 25.
+
+We then multiply the results from distant periods with applied weights to visually enhance areas that lost or recovered certain land use classes. Once we had the mapped regions it is pretty hard to count all locations for many combinations with different years, like looking at same pixels that went from forest to pasture in 1988 but went back to forest in 1995 and then rock in 2005. The flux of uses has too many options for them to be organized by comparing the evolution by year and then by decades to try and see what happened in a larger region.
 
 Since a raster file is in reality a table, in this case 36 tables with 155,239 columns and 158,459 lines, why not use it in a structured database for handling all the 885 billion pixels, as point geometries? In fact we need only 24 billion points, each with 36 attributes of 1 byte per year, and maybe we can store it in a tablespace equivalent to the original 36GB raster files.
 
@@ -27,22 +55,23 @@ With the objective of doing simple queries in a database that accessed all of th
 
 It took about two weeks to organize and develop a methodology based on those concepts, and we reproduced the Rondônia State in the Amazon biome to verify it all went fine, with a similarly sized rectangle and just over 300 million point registries. It takes about 12 hours of processing for all pixels from a 36 band TIFF file directly to a database table. Both datasets could be filtered using PostGis functions like ST_Intersects with benefits from spatial indexes (30 minutes to build it) and even with a final size of 60GB database from 8GB raster data, the derivation of new information became much faster than reprocessing images every time you change something in the analysis algorithm.
 
-Once we had the complete table we can filter it with an administrative division from Brazil like:
+Once we had the complete table we could filter it with an administrative division from Brazil like:
 
-select count(*) from ibge.proc_microrregioes_2021_4326_rupestre, mapbiomas.uso_solo_mapbio7 
-where cd_micro = '32008' and st_intersects( proc_microrregioes_2021_4326_rupestre.geom , uso_solo_mapbio7.geom)
+select count(*) from ibge.proc_microrregion, mapbiomas.mapbiomas_class_use 
+where cd_micro = '32008' and st_intersects( proc_microrregion.geom , mapbiomas_class_use.geom)
 
 ---- result 3,931,037 pixels from 250 million
 
-And also create aggregated data from many possible combinations of classes and years like:
-
-select leg1.description as classe1985, leg1.legend as class_1985, mb_01_1985, mb_06_1990, mb_11_1995, mb_16_2000,
-mb_21_2005, mb_26_2010, mb_31_2015, mb_36_2020, count(*) from
-mapbiomas.campos_rupestres_pci_2023 , mapbiomas.uso_solo_mapbio7 , mapbiomas.mapbiomas_legend leg1
+And also create aggregated data from many possible combinations of classes and years by using SQL agregattors like:
+select leg1.description as class_legend, mb_1985, mb_1990, mb_1995, mb_2000,
+mb_2005, mb_2010, mb_2015, mb_2020, count(*) 
+from
+mapbiomas.subregion , mapbiomas.mapbiomas_class_use , mapbiomas.mapbiomas_legend leg1
 where 
-leg1.mapbiomas=mb_01_1985 and st_intersects( campos_rupestres_pci_2023.geom , uso_solo_mapbio7.geom)
-group by leg1.legend, mb_01_1985, mb_06_1990, mb_11_1995, mb_16_2000,
-mb_21_2005, mb_26_2010, mb_31_2015, mb_36_2020
+leg1.mapbiomas=mb_01_1985 
+and st_intersects( subregion.geom , mapbiomas_class_use.geom)
+group by leg1.legend, mb_1985, mb_1990, mb_1995, mb_2000,
+mb_2005, mb_2010, mb_2015, mb_2020
 
 ---- SELECT 8,624     Query returned successfully in 2 secs 520 msec.
 
