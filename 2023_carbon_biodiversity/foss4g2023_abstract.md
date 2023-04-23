@@ -55,6 +55,18 @@ With the objective of doing simple queries in a database that accessed all of th
 
 It took about two weeks to organize and develop a methodology based on those concepts, and we reproduced the Rondônia State in the Amazon biome to verify it all went fine, with a similarly sized rectangle and just over 300 million point registries. It takes about 12 hours of processing for all pixels from a 36 band TIFF file directly to a database table. Both datasets could be filtered using PostGis functions like ST_Intersects with benefits from spatial indexes (30 minutes to build it) and even with a final size of 60GB database from 8GB raster data, the derivation of new information became much faster than reprocessing images every time you change something in the analysis algorithm.
 
+For insertion of the spatial tables on the database we used a standard PostgreSQL with PostGIS extension, made a conexion on QGIS at the localhost with postgres administrator user. For the creation of a spatial table with one line for each pixel centroid that was the base for the analysis we used "Raster pixels to points" with the following parameters:
+
+Algorithm 'Raster pixels to points' starting…
+Input parameters:
+{ 'FIELD_NAME' : 'VALUE', 'INPUT_RASTER' : '/media/lmbiondo/winlin/mapbiomas_colecao7_2022/brasil_coverage_1985_2020.tiff', 'OUTPUT' : 'postgres://dbname=\'geo\' host=localhost port=5432 user=\'lmbiondo\' password=\'*** \' sslmode=disable table="mapbiomas"."mb_test" (geom)', 'RASTER_BAND' : 1 }
+
+By selecting a database table as output, QGIS did the procedures for creating the table, the spatial field and uploading the results to the database. If the raster had only one band that is the final table as this algorithm creates the registries with the value of one raster band already at the second column and a serial ID on the first one.
+
+If we wanted more bands put on the table, as we wanted as much as 36 years from MapBiomas pixel value for each line of data, 
+
+
+
 Once we had the complete table we could filter it with an administrative division from Brazil like:
 
 select count(*) from ibge.proc_microrregion, mapbiomas.mapbiomas_class_use 
